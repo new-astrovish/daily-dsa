@@ -81,3 +81,5 @@ const strs = strs = ["act","pots","tops","cat","stop","hat"];
 
 const solObj = new Solution();
 console.log(solObj.groupAnagram(strs));
+
+// Best solution
