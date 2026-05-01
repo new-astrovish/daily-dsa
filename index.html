@@ -2,7 +2,11 @@
 <html>
 <body>
     <h1>My Page</h1>
+    <label>Search:</label>
+    <input type="text" id="searchTodo" onkeyup="handleSearch()" />
+    
     <!-- Link your JS file here -->
     <script type="module" src="countByStatus.js"></script>
+    <script src="debounce.js"></script>
 </body>
 </html>

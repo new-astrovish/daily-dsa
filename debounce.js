@@ -1,4 +1,4 @@
-export function debounce(fn, delay) {
+function debounce(fn, delay) {
     let timer;
 
     return function(...args) {
@@ -13,9 +13,7 @@ export function debounce(fn, delay) {
     }
 }
 
-
-function handleSearch(query) {
-    return debounce(query => console.log(`Searching for: ${query}`), 1000);
-}
-
-handleSearch(e.target.value);
+const handleSearch = debounce(() => {
+    const input = document.getElementById('searchTodo');
+    console.log(input.value);
+}, 300);
